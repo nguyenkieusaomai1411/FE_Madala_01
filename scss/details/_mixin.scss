@@ -1,0 +1,56 @@
+//-home-01_product---------------
+.item{
+	text-align: center;
+	background-color: white;
+}
+.item-description{
+	text-align: center;
+	padding: 10px;
+	.kind{
+		font-family: 'opensans-bold';
+		border-bottom: 1px solid $grey-dark;
+
+	}
+	.price{
+		display: flex;
+		justify-content: center;
+		.number-new{
+			font-size: 20px;
+			color:$green;
+			font-family: 'lobster';
+		}
+		.number-old{
+			font-size: 14px;
+			color:$grey-light2;
+			font-family: 'lobster';
+		}
+	}	
+}
+
+
+//--menu-list-pages--------------------------
+.blog-tool_icon{
+	color:black;
+	padding-top:40px;
+	.blog-tool_icon_left{
+		display: flex;
+		width: 50%;
+		margin-bottom: 10px;
+		.blog-tool_icon_left2 {
+			margin-left: 10px;
+		}
+	}
+		display: flex;
+		justify-content: space-between;
+	.blog-tool_icon_right{
+		.list{
+			color:black;
+			a{color:$grey-light1}
+			a:hover{
+				color:$green;
+			}
+		} 
+}
+}
+
+

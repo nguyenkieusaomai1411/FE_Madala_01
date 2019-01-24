@@ -1,0 +1,30 @@
+.footer{
+	background: black;
+	.footer-top{
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		.footer-top_list{
+			h4{
+				color: $grey-footer-header;
+				font-size: 14px;
+			}
+			p{
+				color: $grey-footer;
+				font-size:14px;
+			}
+			.fa-map, .fa-phone-square,.fa-phone, .fa-mail-forward{
+				padding-right: 10px;
+			}
+			.active{
+				color:$green;
+			}
+		}
+	}
+	.footer-bottom{
+		color: $grey-footer;
+		font-size:14px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
