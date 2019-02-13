@@ -1,0 +1,78 @@
+//---home_01----------------------------------------------
+mixin item_product(href,name)
+	.item
+		.item-img
+			img(src=href)
+		.item-description
+			p= name
+			p.kind Mỹ phẩm Châu Âu
+			p.price
+				span.number-new 355.000
+					sup đ
+				span.number-old 450.000
+					sup đ
+				
+//---05-list-------------------------------------------------
+mixin item_list
+	.col-lg-4.col-md-6.col-xs-12
+		img(src='../../img/35.jpg',height='')
+	.col-lg-8.col-md-6.col-xs-12
+		p.list-item_header Mỹ phẩm Châu Âu thương hiệu hàng đầu thế giới
+		p.vote 
+			i.fas.fa-heart
+			i.fas.fa-heart
+			i.fas.fa-heart
+			i.fas.fa-heart
+			i.fas.fa-heart
+			.vote-bye (4 lượt mua)
+		p Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+		p.price
+			span.number-new 355.000
+				sup đ
+		.grid-product-button
+			.container#button-product
+				button.button1 MUA HÀNG
+				button.button2
+					i.fas.fa-heart
+				button.button3 ( )
+
+//---blog-list-pages----------------------------
+mixin menu_list_pages
+	.blog-tool_icon
+		.blog-tool_icon_left
+			.blog-tool_icon_left1 
+				i.fas.fa-th-large
+			.blog-tool_icon_left2 
+				img(src='../../img/list.png', alt='menu',width='20px')
+		.blog-tool_icon_right
+			.list 
+				i.fas.fa-caret-left
+				a(href='#', target='_blank')   1 
+				a(href='#', target='_blank')   2
+				a(href='#', target='_blank')   3 
+				i.fas.fa-caret-right
+//button-buy--------------------------------------
+mixin button_buy
+	.grid-product-button
+			.container#button-product
+				button.button1 MUA HÀNG
+				button.button2
+					i.fas.fa-heart
+				button.button3 ( )
+//details-product----------------------------------
+mixin details-product
+	.content-middle__body__item
+		.picture
+			img(src='../../img/r5.png', alt='menu',width='')
+		.note
+			p.list-item_header Mỹ phẩm Châu Âu
+			p.vote 
+				i.fas.fa-heart
+				i.fas.fa-heart
+				i.fas.fa-heart
+				i.fas.fa-heart
+				i.fas.fa-heart
+				span (4 lượt mua)
+			p.price
+				span.number-new 355.000đ
+				

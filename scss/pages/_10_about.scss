@@ -1,0 +1,32 @@
+.container.about-tool{
+	p {
+		font-size: 24px;
+		font-family: 'opensans-light';
+	}
+}
+.about-tool{
+	margin-top: 40px;
+	.about-tool-header{
+		font-family: 'opensans-light';
+		border-bottom: 1px solid $grey-light2;
+	}
+}
+.about-body{
+	.row{
+		margin-bottom: 40px;
+		.about-text{
+			margin-left: 30px;
+			.col-bottom{
+				font-family: 'opensans-light';
+				color:$grey-light2;
+			}
+		}
+	}
+	.col-middle{
+		.produce{
+			font-family: 'opensans-bold';
+		}
+		
+	}
+								
+}
