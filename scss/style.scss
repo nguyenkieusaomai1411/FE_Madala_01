@@ -1,0 +1,31 @@
+// @import 'scss/placeholder/mixin'--------------
+@import 'details/color';
+@import 'details/mixin';
+@import 'details/extend';
+@import 'details/font';
+//-home-------------------------------------------
+@import 'modules/header';
+//-blog-------------------------------------------
+@import 'pages/blog';
+@import 'pages/13_blog_detail';
+//-about------------------------------------------
+@import 'pages/10_about';
+//shoping-cart-----------------------------------
+@import 'pages/06_shoping_cart';
+//account---------------------------------------
+@import 'pages/07_account';
+//contact--------------------------
+@import 'pages/11_contact';
+//dangky--------------------
+@import 'pages/08_dangky';
+//grid----------------------
+@import 'pages/04_grid';
+//detail-------------------
+@import 'pages/03_detail';
+@import 'modules/body';
+@import 'modules/footer';
+
+
+
+
+
