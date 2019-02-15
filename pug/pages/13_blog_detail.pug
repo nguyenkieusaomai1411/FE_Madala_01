@@ -1,0 +1,120 @@
+
+doctype html
+html
+	include ../details/mixin.pug
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Madala
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+
+		//- Font-awesome
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+		//- Font-family
+		link(href='https://fonts.googleapis.com/css?family=Rochester', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='../../css/style.css')
+
+	body
+		include ../modules/menu
+
+		//-blog-header-------------------------------------
+		section.section-blog1#section-blog1
+			.container.blog-tool
+				.blog-tool-header
+					| Home >
+					span Liên hệ
+				p BLOG
+				h6 BÀI VIẾT MỚI NHẤT
+				.blog-detail
+					.row#blog-detail
+						.col-lg-4#blog-detail_left
+							//--mixin------------------
+							mixin content
+								.content
+									p.time
+										strong
+											span.eleven 11
+											|/Tháng 5
+									p.by Đăng bởi GiangLe
+							//--mixin------------------
+							.blog-detail_left_content
+								img(src='../../img/Layer 69 Copy.png',width='100px',height='50px')
+								+content
+							.blog-detail_left_content
+								img(src='../../img/Layer 78.png',width='100px',height='50px')
+								+content
+							.blog-detail_left_content#end
+								img(src='../../img/Layer 79.png',width='100px',height='50px')
+								+content
+							//-blog-tags-------------------------------
+							.blog-detail_left_content_middle
+								.title BLOG TAGS
+								.blog-tags_button
+									.col-bottom_list
+										button Đồng hồ
+										button Túi
+										button Phụ kiện
+									.col-bottom_list
+										button Giày
+										button Sandal
+										button Áo sơ mi
+										button Nước hoa
+									.col-bottom_list
+										button Trẻ em
+										button Thời trang nữ
+							.blog-detail_left_content_video
+								.title LASTEST VIDEO
+								.blog-tags_video
+									img(src='../../img/blog-detail-video.jpg',width='300px',height='200px')
+						.col-lg-8#blog-detail_right
+							.blog-detail_right_top
+								.col-middle
+									img(src='../../img/Layer 79.png',width='100%')
+									.review
+										p NÀNG BÉO KHÔNG NGẠI DIỆN VÁY ÁO NỔI BẬT
+									.content
+										p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.Trong tiết xuân hè, nàng ngoại cỡ thắp sáng phong cách bằng quần họa tiết nhiệt đới đi kèm áo sơ mi nhã nhặn.Trang phục họa tiết điện tử được nàng phối cùng chân váy kẻ caro, làm nên style vừa hiện đại, vừa phảng phất nét cổ điển.Lối diện đồ hàng ngày đơn giản, khỏe khoắn của cô khi kết hợp chất liệu jean.Nữ blogger rực rỡ khi hòa trộn các gam đỏ, hồng, tím... một cách vui tươi, kèm theo các phụ kiện điệu đà.
+									.by
+										p
+											i Bởi NamTran (27/05/2015)
+								.col-bottom
+									.col-bottom1
+										p
+											i Đọc thêm
+									.col-bottom1
+										p
+											i 23 Bình luận
+								.col-bottom-tag
+										p Tag:
+											span  Men
+							.blog-detail_right_bottom
+								.contact_right
+									.contact_right_head
+										|ĐÓNG GÓP Ý KIẾN
+									.contact_right_body
+										table.contact-input
+											tbody
+												tr
+													td Tên
+														span *
+													td
+														input(type='text')
+												tr
+													td Email
+														span *
+													td
+														input(type='text')
+												tr
+													td Ý kiến
+														span *
+													td
+														textarea#comment.form-control(rows='5')
+									.contac_right_bottom__blog-detail
+										button.sent GỬI Ý KIẾN
+	include ../modules/footer
