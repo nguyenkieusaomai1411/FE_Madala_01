@@ -1,0 +1,51 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color:black;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 0px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  
+}
+th{
+	background-color: $grey-table;
+  font-size: 12px;
+}
+td{
+  input{
+    width: 12%;
+  }
+}
+td.price{
+    font-size: 20px;
+    font-family: 'UTM';
+  }
+.shopingcart_bottom_content{
+  padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 68%;
+}
+.shopingcart_bottom{
+ 	display: flex;
+ 	text-align: right;
+ 	button{
+    font-size: 12px;
+ 		margin-left: 5px;
+ 	}
+ 	.btn1,.btn2{
+ 		background-color: black;
+ 		color: white;
+ 		text-align: center;
+ 	}
+ 	.btn3{
+ 		background-color: $green;
+ 		color: white;
+ 		text-align: center;
+ 	}
+ }
