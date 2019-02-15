@@ -1,0 +1,31 @@
+.row#contact{
+	padding-bottom: 40px;
+}
+.contact_right_head{
+	padding-bottom: 20px;
+	font-family: 'opensans-bold';
+}
+.contact_right_body{
+	padding-bottom: 20px;
+	table.contact-input{
+		width: 100%;
+		background-color: white;
+		input{
+			width: 100%;	
+		}
+		textarea#comment{
+			width: 100%;
+		}
+		td{
+			text-align: left;
+		}
+	}
+}
+.contac_right_bottom{
+	padding-bottom: 20px;
+	text-align: right;
+	button{
+		color: white;
+		background-color: black;
+	}
+}
