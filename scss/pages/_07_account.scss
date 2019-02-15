@@ -1,0 +1,59 @@
+.row#account{
+	padding-bottom: 60px;
+}
+
+.col-lg-8#acount-left{
+	// padding-top: 20px;
+}
+.col-lg-4#account-right{
+	color:black;
+	justify-content: left;
+	.account-right{
+		display: flex;
+		.account-text {
+			i{
+			margin-right: 5px;
+			}	
+			.full-name{
+				padding-top: 0px;
+				padding-left: 20px;
+    			font-size: 16px;
+			}
+		}
+	}
+}
+
+.col-lg-4#account-right{
+	.account-right__head{
+		p{
+			padding-top: 0px;
+			font-family: 'opensans-light';
+			font-size: 20px;
+		}
+		border-bottom: 1px solid #ddd;
+		font-family: 'opensans-light';
+	}
+	.account-right{
+		// padding-bottom: 40px;
+	}
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color:black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+
+  }
+.pay{
+  	color:red!important;
+  }
+th{
+	background-color: $grey-table;
+	font-family: 'opensans-light';
+}
