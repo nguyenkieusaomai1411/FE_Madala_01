@@ -1,0 +1,76 @@
+doctype html
+html
+	include ../details/mixin.pug
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Madala
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+
+		//- Font-awesome
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin='anonymous')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+		//- Font-family
+		link(href='https://fonts.googleapis.com/css?family=Rochester', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', href='../../css/style.css')
+
+	body
+		include ../modules/menu
+
+		//-blog-header-------------------------------------
+		section.section-blog1#section-blog1
+			.container.blog-tool
+				.blog-tool-header
+					| Home >
+					span Tài khoản
+				p TÀI KHOẢN
+				.row#account
+					.col-lg-8#acount-left
+						table
+							tbody
+								tr
+									each val in ['Order','Date','TÌNH TRẠNG THANH TOÁN','TỔNG','NỢ']
+										th= val
+								mixin content
+									tr
+										each val in ['#1006','May 13, 2013']
+											td= val
+										td.pay Đã thanh toán
+										td 350.000
+											sup đ
+										td 0
+								+content
+								+content
+								tr
+									each val in ['#1006','May 13, 2013']
+										td= val
+									td.pay Thanh toán 50%
+									td 350.000
+										sup đ
+									td 275.000
+										sup đ
+					.col-lg-4#account-right
+						.account-right__head
+							p CHI TIẾT TÀI KHOẢN
+						.account-right
+							.account-text
+								i.fas.fa-user
+								| GIANGLE
+								p.full-name leanhgiang39@gmail.com
+						.account-right
+							.account-text
+								i.fa.fa-map
+								| Tòa nhà Hà Nội group 442 Đội Cấn,
+								|Ba Đình     Hà Nội
+						.account-right
+							.account-text
+								i.fa.fa-phone-square
+								| (04) 3786 8904
+		//footer------------------------------------------------------------
+	//------------------------------------------------------------------
+	include ../modules/footer

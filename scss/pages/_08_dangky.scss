@@ -1,0 +1,44 @@
+.blog-tool-header{
+	span{
+		color:$green;
+	}
+}
+.dangky-form{
+	p{
+		font-family: 'opensans-bold';
+	}
+	font-family: 'opensans-bold';
+	padding: 40px;
+	margin-bottom:40px; 
+	background-color: $grey-form;
+	input{
+		width: 100%;
+	}
+}
+.dangky_bottom{
+	padding: 20px;
+	justify-content: space-between;
+	display: flex;
+	button{
+		color: white;
+		background-color: black;
+		i{
+			margin-left: 10px;
+		}
+	}
+}
+//--LOGIN----------------------
+.blog-tool-header2{
+	font-family: 'opensans-light';
+	display: flex;
+	justify-content: space-between;
+	button{
+		color:white;
+		background-color: black;
+	}
+	.blog-tool-header2{
+		.header2-button{	
+			padding-top: 10px;
+		}
+	}
+}

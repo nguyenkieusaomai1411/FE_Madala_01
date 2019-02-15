@@ -1,0 +1,20 @@
+//extend-wrapper-----------
+%wrapper-item{
+	width: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+//extend-button-home_01------
+%button-item{
+	border-radius: 20px;	
+	border:1px solid $grey-light2;	
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 20px 5px;
+	cursor: pointer;
+}
